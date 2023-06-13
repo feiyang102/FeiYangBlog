@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "FeiYangBlog"
   text: "飞扬前端技术博客"
-  tagline: My great project tagline
+  tagline: 每天进步一点点
   actions:
     - theme: brand
       text: Markdown Examples

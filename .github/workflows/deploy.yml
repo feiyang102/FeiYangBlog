@@ -3,7 +3,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - main
+      - main # 注意这里
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: .vitepress/dist
+          path: .vitepress/dist #注意这里
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
