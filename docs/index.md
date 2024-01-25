@@ -14,6 +14,10 @@ hero:
       text: GitHub
       link: https://github.com/feiyang102
       # link: /api-examples
+    - theme: alt
+      text: GitHub2
+      link: https://github.com/feiyang102
+      # link: /api-examples
 
 features:
   - title: Feature A
