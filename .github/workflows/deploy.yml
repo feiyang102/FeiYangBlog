@@ -35,7 +35,9 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
+        # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
+        with:
+          version: 8
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
