@@ -16,23 +16,6 @@ export default defineConfig({
       { text: "服务端", link: "/backend/index" },
       { text: "其他", link: "/others/index" },
     ],
-
-    // sidebar: [
-    //   {
-    //     text: "测试",
-    //     items: [
-    //       { text: "Markdown Examples", link: "/markdown-examples" },
-    //       { text: "Runtime API Examples1", link: "/api-examples" },
-    //     ],
-    //   },
-    //   {
-    //     text: "测试",
-    //     items: [
-    //       { text: "Markdown Examples", link: "/markdown-examples" },
-    //       { text: "Runtime API Examples2", link: "/api-examples" },
-    //     ],
-    //   },
-    // ],
     sidebar: {
       "/js/index": { base: "/js/index", items: sidebarDefault("JS") },
       "/vue/index": { base: "/vue/index", items: sidebarDefault("Vue") },
@@ -51,6 +34,35 @@ export default defineConfig({
       "/others/index": { base: "/others/index", items: sidebarDefault("其他") },
     },
     socialLinks: [{ icon: "github", link: "https://github.com/feiyang102" }],
+
+    // footer: {
+    //   message: '基于 MIT 许可发布',
+    //   copyright: `版权所有 © 2019-${new Date().getFullYear()} 。。。`
+    // },
+
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+
+    outline: {
+      label: "页面导航",
+    },
+
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "short",
+        timeStyle: "medium",
+      },
+    },
+
+    // langMenuLabel: "多语言",
+    returnToTopLabel: "回到顶部",
+    // sidebarMenuLabel: "菜单",
+    // darkModeSwitchLabel: "主题",
+    lightModeSwitchTitle: "切换到浅色模式",
+    darkModeSwitchTitle: "切换到深色模式",
   },
 });
 
@@ -58,6 +70,7 @@ function sidebarDefault(path: string) {
   return [
     {
       text: `TODO ${path}`,
+      collapsed: false,
       // items: [{ text: "TODO", link: "/markdown-examples" }],
     },
   ];
