@@ -43,13 +43,15 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
+  /* --vp-c-brand-1: var(--vp-c-indigo-1); */
+  /* 修改头部导航菜单的 active color */
+  --vp-c-brand-1: #319bff;
   --vp-c-brand-2: var(--vp-c-indigo-2);
   --vp-c-brand-3: var(--vp-c-indigo-3);
   --vp-c-brand-soft: var(--vp-c-indigo-soft);
@@ -137,3 +139,56 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* #region 首页自定义 start */
+/* 【Header】左上角Logo文字部分的渐变效果 */
+#app > div > header > div > div.wrapper > div > div.title > div > a {
+  color: transparent;
+  background: var(--vp-home-hero-name-background);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 【首页】主体居中 */
+#VPContent > div > div.VPHero.VPHomeHero > div > div {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 【首页】主标题渐变动效 */
+#VPContent > div > div.VPHero.VPHomeHero > div > div > h1 > span {
+  animation: textGradient 300s infinite linear;
+  background: -webkit-linear-gradient(
+    120deg,
+    #bd34fe 25%,
+    #41d1ff 50%,
+    #bd34fe 75%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes textGradient {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 28000px;
+  }
+}
+
+/* 【首页】tagline 字体调整 */
+#VPContent > div > div.VPHero.VPHomeHero > div > div > p {
+  font-size: 40px;
+  text-wrap: nowrap;
+  max-width: 100%;
+  margin-top: 10px;
+}
+/* #endregion 首页自定义 end */

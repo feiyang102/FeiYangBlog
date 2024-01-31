@@ -9,12 +9,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "JS", link: "/js/index" },
-      { text: "Vue", link: "/vue/index" },
-      { text: "工程化", link: "/engineering/index" },
-      { text: "算法", link: "/algorithm/index" },
-      { text: "服务端", link: "/backend/index" },
-      { text: "其他", link: "/others/index" },
+      { text: "JS", link: "/js/index", activeMatch: "/js/" },
+      { text: "Vue", link: "/vue/index", activeMatch: "/vue/" },
+      {
+        text: "工程化",
+        link: "/engineering/index",
+        activeMatch: "/engineering/",
+      },
+      { text: "算法", link: "/algorithm/index", activeMatch: "/algorithm/" },
+      { text: "服务端", link: "/backend/index", activeMatch: "/backend/" },
+      { text: "其他", link: "/others/index", activeMatch: "/others/" },
     ],
     sidebar: {
       "/js/index": { base: "/js/index", items: sidebarDefault("JS") },
@@ -63,6 +67,7 @@ export default defineConfig({
     // darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
+    // logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
   },
 });
 
