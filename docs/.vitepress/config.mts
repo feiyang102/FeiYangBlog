@@ -38,7 +38,7 @@ export default defineConfig({
         base: "/backend/index",
         items: sidebarDefault("服务端"),
       },
-      "/others/index": { base: "/others/index", items: sidebarDefault("其他") },
+      "/others/": { base: "/others/", items: sidebarOthers() },
     },
     socialLinks: [{ icon: "github", link: "https://github.com/feiyang102" }],
 
@@ -71,6 +71,16 @@ function sidebarDefault(path: string) {
       text: `TODO ${path}`,
       collapsed: false,
       // items: [{ text: "TODO", link: "/markdown-examples" }],
+    },
+  ];
+}
+
+function sidebarOthers() {
+  return [
+    {
+      text: "设计模式",
+      collapsed: false,
+      items: [{ text: "单例模式", link: "/design-singleton" }],
     },
   ];
 }

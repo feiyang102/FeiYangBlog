@@ -2,4 +2,8 @@
 outline: deep
 ---
 
-# TODO 其他
+# 其他
+
+## 设计模式
+
+### [单例模式](./design-singleton)
