@@ -5,5 +5,5 @@ layout: home
 hero:
   name: "飞扬 Blog"
   text: ""
-  tagline: Focus on Work and Enjoy Life.
+  tagline: 每天进步一点点
 ---
