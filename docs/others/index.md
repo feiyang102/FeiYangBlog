@@ -6,4 +6,6 @@ outline: deep
 
 ## 设计模式
 
-### [单例模式](./design-singleton)
+### 1. [单例模式](./design-singleton)
+
+### 2. [观察者模式](./design-observer)

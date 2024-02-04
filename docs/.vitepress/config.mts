@@ -80,7 +80,10 @@ function sidebarOthers() {
     {
       text: "设计模式",
       collapsed: false,
-      items: [{ text: "单例模式", link: "design-singleton" }],
+      items: [
+        { text: "单例模式", link: "design-singleton" },
+        { text: "观察者模式", link: "design-observer" },
+      ],
     },
   ];
 }
