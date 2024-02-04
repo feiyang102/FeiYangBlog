@@ -21,7 +21,10 @@ export default defineConfig({
       },
       { text: "算法", link: "/algorithm/index", activeMatch: "/algorithm/" },
       { text: "服务端", link: "/backend/index", activeMatch: "/backend/" },
-      { text: "其他", link: "/others/index", activeMatch: "/others/" },
+      {
+        text: "其他",
+        items: navOthers(),
+      },
     ],
     sidebar: {
       "/js/index": { base: "/js/index", items: sidebarDefault("JS") },
@@ -64,6 +67,19 @@ export default defineConfig({
     logo: { src: "/blog-logo.svg", width: 24, height: 24 },
   },
 });
+
+function navOthers() {
+  return [
+    {
+      // 该部分的标题
+      text: "《设计模式》",
+      items: [
+        { text: "单例模式", link: "/others/design-singleton" },
+        { text: "观察者模式", link: "/others/design-observer" },
+      ],
+    },
+  ];
+}
 
 function sidebarDefault(path: string) {
   return [
