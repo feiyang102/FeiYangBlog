@@ -78,6 +78,13 @@ function navOthers() {
         { text: "观察者模式", link: "/others/design-observer" },
       ],
     },
+    {
+      // 该部分的标题
+      text: "《计算机网络》",
+      items: [
+        { text: "响应状态码及含义", link: "/others/network-response-code" },
+      ],
+    },
   ];
 }
 
@@ -100,6 +107,11 @@ function sidebarOthers() {
         { text: "单例模式", link: "design-singleton" },
         { text: "观察者模式", link: "design-observer" },
       ],
+    },
+    {
+      text: "计算机网络",
+      collapsed: false,
+      items: [{ text: "响应状态码及含义", link: "network-response-code" }],
     },
   ];
 }
