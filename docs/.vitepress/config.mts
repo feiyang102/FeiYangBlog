@@ -71,7 +71,6 @@ export default defineConfig({
 function navOthers() {
   return [
     {
-      // 该部分的标题
       text: "《设计模式》",
       items: [
         { text: "单例模式", link: "/others/design-singleton" },
@@ -79,11 +78,14 @@ function navOthers() {
       ],
     },
     {
-      // 该部分的标题
       text: "《计算机网络》",
       items: [
         { text: "响应状态码及含义", link: "/others/network-response-code" },
       ],
+    },
+    {
+      text: "CSS效果",
+      items: [{ text: "渐变字", link: "/others/css-gradient-text" }],
     },
   ];
 }
@@ -112,6 +114,11 @@ function sidebarOthers() {
       text: "计算机网络",
       collapsed: false,
       items: [{ text: "响应状态码及含义", link: "network-response-code" }],
+    },
+    {
+      text: "CSS效果",
+      collapsed: false,
+      items: [{ text: "渐变字", link: "css-gradient-text" }],
     },
   ];
 }
