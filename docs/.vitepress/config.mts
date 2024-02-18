@@ -12,7 +12,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "JS", link: "/js/index", activeMatch: "/js/" },
+      { text: "JS", items: navJS() },
       { text: "Vue", link: "/vue/index", activeMatch: "/vue/" },
       {
         text: "工程化",
@@ -27,7 +27,7 @@ export default defineConfig({
       },
     ],
     sidebar: {
-      "/js/index": { base: "/js/index", items: sidebarDefault("JS") },
+      "/js/": { base: "/js/", items: sidebarJS() },
       "/vue/index": { base: "/vue/index", items: sidebarDefault("Vue") },
       "/engineering/index": {
         base: "/engineering/index",
@@ -68,6 +68,10 @@ export default defineConfig({
   },
 });
 
+function navJS() {
+  return [{ text: "内存泄漏", link: "/js/memory-leak" }];
+}
+
 function navOthers() {
   return [
     {
@@ -98,6 +102,10 @@ function sidebarDefault(path: string) {
       // items: [{ text: "TODO", link: "/markdown-examples" }],
     },
   ];
+}
+
+function sidebarJS() {
+  return [{ text: "内存泄漏", link: "memory-leak" }];
 }
 
 function sidebarOthers() {
