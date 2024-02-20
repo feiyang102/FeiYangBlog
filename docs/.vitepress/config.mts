@@ -1,12 +1,11 @@
 import { defineConfig } from "vitepress";
 
-let base = "/FeiYangBlog";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: base,
+  base: "/FeiYangBlog",
   title: "飞扬 Blog",
   description: "FeiYang Blog",
-  head: [["link", { rel: "icon", href: `${base}/favicon.ico` }]],
+  head: [["link", { rel: "icon", href: `/favicon.ico` }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
