@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/FeiYangBlog",
+  base: "/",
   title: "飞扬 Blog",
   description: "FeiYang Blog",
   head: [["link", { rel: "icon", href: `/favicon.ico` }]],
