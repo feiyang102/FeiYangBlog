@@ -1,9 +1,6 @@
 import { defineConfig } from "vitepress";
 
 let base = "/FeiYangBlog";
-if (import.meta.env?.VITE_GLOBAL_PLATFORM == "vercel") {
-  base = "";
-}
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: base,
