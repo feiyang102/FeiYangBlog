@@ -89,6 +89,10 @@ function navOthers() {
       text: "CSS效果",
       items: [{ text: "渐变字", link: "/others/css-gradient-text" }],
     },
+    {
+      text: "其他",
+      items: [{ text: "npm-run-all", link: "/others/npm-run-all" }],
+    },
   ];
 }
 
@@ -125,6 +129,11 @@ function sidebarOthers() {
       text: "CSS效果",
       collapsed: false,
       items: [{ text: "渐变字", link: "css-gradient-text" }],
+    },
+    {
+      text: "其他",
+      collapsed: false,
+      items: [{ text: "npm-run-all", link: "npm-run-all" }],
     },
   ];
 }
