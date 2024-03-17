@@ -17,6 +17,6 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "vitepress": "1.0.0-rc.40"
+    "vitepress": "1.0.0-rc.45"
   }
 }
